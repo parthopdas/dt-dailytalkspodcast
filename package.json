@@ -1,0 +1,45 @@
+{
+  "name": "@kitamstudios/typescript-nodejs-app-starter",
+  "version": "1.0.0",
+  "description": "A template for nodejs command line app in typescript complete with build & lint setup.",
+  "author": "Partho P. Das <parthopdas@live.com>",
+  "main": "index.js",
+  "keywords": [],
+  "license": "ISC",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start:dev": "nodemon",
+    "start": "yarn run build && node build/index.js",
+    "lint": "lint-staged",
+    "dev": "ts-node-dev --transpileOnly --no-notify --clear src"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.1",
+    "@types/yargs": "^15.0.7",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": ">=4",
+    "lint-staged": ">=10",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.0",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,js}": "eslint --cache"
+  },
+  "dependencies": {
+    "yargs": "^16.0.3"
+  }
+}
