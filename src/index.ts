@@ -1,10 +1,8 @@
 import * as yargs from 'yargs'
 
-const args = yargs
-  .commandDir('cmddefs')
+yargs
+  .commandDir('commands', { extensions: ['ts', 'js'] })
   .demandCommand()
   .alias('help', 'h')
   .alias('version', 'V')
-  .parse()
-
-console.log('Parsed arguments:', args)
+  .parse(process.argv.slice(2))

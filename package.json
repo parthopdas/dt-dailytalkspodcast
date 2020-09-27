@@ -10,8 +10,11 @@
     "build": "rimraf ./build && tsc",
     "start:dev": "nodemon",
     "start": "yarn run build && node build/index.js",
-    "lint": "lint-staged",
-    "dev": "ts-node-dev --transpileOnly --no-notify --clear src"
+    "lint": "eslint **/*.ts",
+    "lint:staged": "lint-staged"
+  },
+  "dependencies": {
+    "yargs": "^16.0.3"
   },
   "devDependencies": {
     "@types/node": "^13.7.1",
@@ -28,18 +31,24 @@
     "nodemon": "^1.19.1",
     "prettier": "^1.19.1",
     "rimraf": "^3.0.0",
-    "ts-node-dev": "^1.0.0-pre.44",
+    "ts-node": "^9.0.0",
     "typescript": "^3.7.5"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint"
+      "pre-commit": "yarn run lint:staged"
     }
   },
   "lint-staged": {
     "*.{ts,js}": "eslint --cache"
   },
-  "dependencies": {
-    "yargs": "^16.0.3"
+  "nodemonConfig": {
+    "verbose": true,
+    "watch": [
+      "src"
+    ],
+    "ext": ".ts,.js",
+    "ignore": [],
+    "exec": "node -r ts-node/register ./src/index.ts update-feed"
   }
 }

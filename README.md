@@ -1,6 +1,6 @@
-# A template for Node.js command line app in typescript
+# RSS feeds for the Daily talks @ dhammatalks.org
 
-A starter for typescript Node.js projects with build, linting and formatting set up.
+Generate iTunes Podcasts compatible RSS feed
 
 ## Commands
 
@@ -18,17 +18,12 @@ A starter for typescript Node.js projects with build, linting and formatting set
 
 ## Backlog
 
-- [x] Node.js startup
-- [x] ESlint + Prettier + EditorConfig integration
-- [x] Husky integration
-- [ ] Testing
+- [ ] ?
 
-## Inspired by
+## Important links
 
-- [typescript-base-template](https://github.com/chuck-huey/typescript-base-template)
-- [Simple TypeScript Starter | 2020](https://github.com/stemmlerjs/simple-typescript-starter)
+- [Central achieve for all talks](https://www.dhammatalks.org/mp3_index.html)
 
-## Refer
+## Attribution
 
-- [How to Setup a TypeScript + Node.js Project](https://khalilstemmler.com/blogs/typescript/node-starter-project/)
-- [Setup a Typescript Project with ESlint, Prettier, EditorConfig and Husky](https://dev.to/chuck_huey/setup-a-typescript-project-with-eslint-prettier-editorconfig-and-husky-13aa)
+- Inspired by [Sirimangalo Podcasts](https://gitlab.com/sirimangalo/podcast) by [@olastor](https://github.com/olastor)
