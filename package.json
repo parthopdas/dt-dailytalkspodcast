@@ -14,10 +14,20 @@
     "lint:staged": "lint-staged"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "fast-xml-parser": "^3.17.4",
+    "md5": "^2.3.0",
+    "moment": "^2.29.0",
+    "winston": "^3.3.3",
     "yargs": "^16.0.3"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.22",
+    "@types/md5": "^2.2.0",
+    "@types/moment": "^2.13.0",
     "@types/node": "^13.7.1",
+    "@types/winston": "^2.4.4",
     "@types/yargs": "^15.0.7",
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
