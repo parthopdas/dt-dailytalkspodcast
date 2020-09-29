@@ -18,7 +18,9 @@ Generate iTunes Podcasts compatible RSS feed
 
 ## Backlog
 
-- [ ] ?
+- [x] v1 feed generation
+- [ ] validate rss
+- [ ] File and episode sizes
 
 ## Important links
 

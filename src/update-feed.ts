@@ -8,15 +8,6 @@ import moment from 'moment'
 import logger from './logger'
 import * as podcasts from './podcast.types'
 
-/*
-
-- read url + desc
-- validate ensure errors in format matching are ignored and logged out
-- create feedItem structure for each
-- write all feed url structure
-- validate rssfeed
- */
-
 const episodePathCracker = /^https.*\/Archive\/y(\d{4})\/\d{2}(\d{2})(\d{2}).*$/i
 
 export interface CommandArgs {
